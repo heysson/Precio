@@ -1,0 +1,7 @@
+com\between\precio\controller\PricesController.class
+com\between\precio\repository\PricesRepository.class
+com\between\precio\PrecioApplication.class
+com\between\precio\config\SpringFoxConfig.class
+com\between\precio\entity\Prices$PricesBuilder.class
+com\between\precio\entity\Prices.class
+com\between\precio\config\WebConfig.class

@@ -1,0 +1,14 @@
+version: "2"
+services: 
+ java:
+  image: precio-0.0.1-SNAPSHOT:${TAG}
+  command: ["java","-jar","precio-0.0.1-SNAPSHOT.jar","/dev/null"]
+  privileged: true
+  volumes:
+    - back_dist_logs:/precio-0.0.1-SNAPSHOT/log
+  environment:
+    - LOGGING_FILE=/precio-0.0.1-SNAPSHOT/log/app.log
+  restart: always
+  user: 1000:1000
+volumes:
+  back_dist_logs:
